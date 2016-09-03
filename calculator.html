@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MyCalculator</title>
+
+
+    <style media="screen" type="text/css">
+
+    .contain{
+      width:280px;
+      height:440px;
+      margin-left: 450px;
+      margin-top: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      /*border-style: outset;*/
+      border-color: gray;
+      box-shadow: 1px 2px 3px black;
+    }
+      #d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8, #d9, #dm, #ds, #dp, #d, #de, #d0, #dd, #dmo, #dps, #dac{
+        width: 70px;
+        height:64px;
+        background-color: lightgray;
+        font-size: 30px;
+        padding-top: 14px;
+        text-align: center;
+        /*box-shadow: 0px 0px 0.1px black;*/
+      }
+      #d0{
+        width: 140px;
+      }
+      #dm, #ds, #dp, #de, #dd{
+        background-color: orange;
+      }
+      #dis{
+        width: 260px;
+        height:100px;
+        background-color: black;
+        color:white;
+        text-align-last: justify;
+        padding:  10px;
+        font-size: 30px;
+      }
+
+      .bb{
+        background-color: transparent;
+        border-color: transparent;
+        width: 70px;
+        height:55px;
+      }
+      h1{
+        font-weight: bolder;
+        font-family: monospace;
+        font-size: 80px;
+        text-align: center;
+      }
+
+    </style>
+
+    <script type="text/javascript" src="calc.js" >
+      //  var s="";
+      //  var t, u, v, w;
+      //  function function1(){
+      //    t=document.getElementsByClassName('po').value;
+      //    if(t=='=')
+      //    {
+      //      for(var i=0;i<s.length;i++)
+      //      {
+      //        if(s.charAt(i)=='+'||s.charAt(i)=='-'||s.charAt(i)=='/'||s.charAt(i)=='*'||s.charAt(i)=='%')
+      //        {
+      //          u=parseInt(s.slice(0,i));
+      //          v=s.charAt(i);
+      //          w=parseInt(s.slice(i+1));
+      //          break;
+      //        }
+      //      }
+      //      var r;
+      //      if(v=='+')
+      //      r=u+w;
+      //      if(v=='-')
+      //      r=u-w;
+      //      if(v=='*')
+      //      r=u*w;
+      //      if(v=='/')
+      //      r=u/w;
+      //      if(v=='%')
+      //      r=u%w;
+      //      dis.getElementById('dis').innerHTML = r;
+      //    }
+      //    s=s+t;
+      //    dis.getElementById('dis').innerHTML += t;
+      //  }
+      // window.onload= function() {
+      //
+      // var l="";
+      // function function1()
+      // {
+      //   t=document.getElementsByClassName('s').value;
+      //   l=l+t;
+      //   document.getElementByid('dis').innerHTML +=t ;
+      //
+      // }
+      // var button=document.getElementsByClassName('s');
+      // button.onclick = function1;
+      //
+      // }
+
+
+    </script>
+  </head>
+  <body>
+    <h1>MyCalculator</h1>
+    <div class="contain">
+      <div id="dis" > </div>
+      <button type="button" id="dac" >AC</button>
+      <button type="button" id="dps" class="s" >+/-</button>
+      <button type="button" id="dmo" class="s" >%</button>
+      <button type="button" id="dd" class="s" >/</button>
+      <button type="button" id="d7" class="s" >7</button>
+      <button type="button" id="d8" class="s" >8</button>
+      <button type="button" id="d9" class="s">9</button>
+      <button type="button" id="dm" class="s" >*</button>
+      <button type="button" id="d4" class="s" >4</button>
+      <button type="button" id="d5" class="s" >5</button>
+      <button type="button" id="d6" class="s" >6</button>
+      <button type="button" id="ds" class="s" >-</button>
+      <button type="button" id="d1" class="s" >1</button>
+      <button type="button" id="d2" class="s" >2</button>
+      <button type="button" id="d3" class="s">3</button>
+      <button type="button" id="dp" class="s">+</button>
+      <button type="button" id="d0" class="s" >0</button>
+      <button type="button" id="d">.</button>
+      <button type="button" id="de" class="op">=</button>
+
+
+    </div>
+  </body>
+</html>
